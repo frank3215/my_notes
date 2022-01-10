@@ -58,22 +58,52 @@
 
 ## 课后练习
 
-1. ```shell
+### 1.1
+
+```shell
 $ echo $SHELL
 /bin/zsh
-2. ```shell
+```
+
+### 1.2
+
+```shell
 $ sudo mkdir /tmp/missing
-3. ```shell
+```
+
+### 1.3
+
+```shell
 $ man touch
-4. ```shell
+```
+### 1.4
+
+```shell
 $ sudo touch semester
-5. ```shell
+```
+
+### 1.5
+
+```shell
 $ echo '#!/bin/sh' | sudo tee semester
 $ echo 'curl --head --silent https://missing.csail.mit.edu' | sudo tee -a semester
-6. 因为用户没有执行权限。
-	```shell
-	$ ls -l semester
-	-rw-r--r-- 1 root 61  1  9 20:58 semester
-7. 用`sh`执行的话，有读权限就可以。
-8. `chmod - change file mode bits`
-9. 
+```
+
+### 1.6
+
+因为用户没有执行权限。
+
+```shell
+$ ls -l semester
+-rw-r--r-- 1 root 61  1  9 20:58 semester
+```
+
+### 1.7
+
+用`sh`执行的话，有读权限就可以。
+
+### 1.8
+
+man页面的描述是`chmod - change file mode bits`。
+
+### 1.9
